@@ -1,0 +1,70 @@
+.container {
+  position: absolute;
+  top: 15rem;
+  display: flex;
+  flex-direction: column;
+  transform: all 4s .4s;
+  animation: 1.2s allSlide;
+}
+.container p {
+  color: #8A8A8A;
+  font-size: .8rem;
+  margin-left: .2rem;
+}
+
+.iconContainer {
+  height: 4rem;
+  width: 4rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 3rem;
+  transform: all .4s;
+  animation: slideIn .4s;
+  cursor: pointer;
+}
+
+.linkedin {
+  background-color: #0077b5;
+  color: #fff;
+}
+
+.twitter {
+  background-color:  #3299FF;
+  color: #fff;
+}
+
+.github {
+  background-color:  #4E545A;
+  color: #8A8A8A;
+}
+
+.iconContainer:hover {
+  animation: slideOut .4s forwards;
+}
+
+@keyframes slideOut {
+  0% {
+    width: 4rem;
+  }
+  100% {
+    width: 6rem;
+  }
+}
+@keyframes slideIn {
+  0% {
+    width: 6rem;
+  }
+  100% {
+    width: 4rem;
+  }
+}
+
+@keyframes allSlide {
+  0% {
+    transform: translateX(-10rem);
+  }
+  100% {
+    transform: translateX(0%);
+  }
+}

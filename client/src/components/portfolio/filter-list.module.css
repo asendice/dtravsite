@@ -1,0 +1,7 @@
+.container {
+  max-width: 60%;
+  margin: 1rem auto 0rem auto;
+  display: flex;
+  flex-wrap: wrap;
+  gap: .5rem 1rem;
+}

@@ -1,0 +1,28 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  position: relative;
+}
+
+.textContainer {
+  text-align: center;
+  margin: 15rem auto 0rem auto;
+}
+
+.textContainer h1 {
+  color: #CACACA;
+  font-size: 2.6rem;
+}
+
+.textContainer p {
+  color: #8A8A8A;
+  font-size: 1.3rem;
+  line-height: .7em;
+}
+
+.btnContainer {
+  margin-top: 1rem;
+  margin-left: auto;
+  margin-right: auto;
+}
