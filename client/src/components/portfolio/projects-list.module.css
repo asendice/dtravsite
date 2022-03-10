@@ -1,0 +1,14 @@
+.container {
+  width: 60%;
+  margin: 1rem auto 0rem auto;
+}
+
+.container p {
+  font-size: 1rem;
+  color: #8A8A8A;
+}
+
+.list {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
