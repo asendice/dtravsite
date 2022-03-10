@@ -24,17 +24,17 @@ app.use(cors());
 app.use("/api", authRoutes);
 
 // need for production
-if (process.env.NODE_ENV === "production") {
-  app.use(express.static(path.join(__dirname, "/client/build")));
+// if (process.env.NODE_ENV === "production") {
+//   app.use(express.static(path.join(__dirname, "/client/build")));
 
-  app.get("*", (req, res) => {
-    res.sendFile(path.join(__dirname, "client", "build", "index.html"));
-  });
-} else {
-  app.get("/", (req, res) => {
-    res.send("Api running");
-  });
-}
+//   app.get("*", (req, res) => {
+//     res.sendFile(path.join(__dirname, "client", "build", "index.html"));
+//   });
+// } else {
+//   app.get("/", (req, res) => {
+//     res.send("Api running");
+//   });
+// }
 
 // const whitelist = ["http://localhost:3000", "https://dylantravis.herokuapp.com/api"];
 
