@@ -13,7 +13,6 @@ function Portfolio() {
       .get("/projects")
       .then((response) => {
         if (response) {
-          console.log(response);
           return response;
         } else {
           const error = new Error(`Error ${error.status}: ${error.statusText}`);
