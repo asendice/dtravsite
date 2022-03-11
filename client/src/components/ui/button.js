@@ -26,8 +26,6 @@ function Button(props) {
         to={link}
         className={classes.container}
         style={{ backgroundColor: style }}
-        rel="noopener noreferrer"
-        target="_blank"
       >
         {props.children}
       </Link>
