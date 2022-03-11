@@ -1,4 +1,5 @@
 import classes from "./contact.module.css";
+import { useState } from "react";
 import {
   BsFillPersonFill,
   BsFillEnvelopeFill,
@@ -8,8 +9,44 @@ import {
   BsFillFilePdfFill,
 } from "react-icons/bs";
 import Button from "../ui/button";
+import backendApi from "../../apis/backendApi";
 
 function Contact() {
+  const [name, setName] = useState("");
+  const [message, setMessage] = useState("");
+
+  async function postMessage(post) {
+    const json = JSON.stringify(post);
+    await backendApi
+      .post("/messages", json, {
+        headers: {
+          "Content-Type": "application/json",
+        },
+      })
+      .then((response) => {
+        if (response) {
+          return response;
+        } else {
+          const error = new Error(
+            `Error ${response.status}: ${response.statusText}`
+          );
+          error.response = response;
+          throw error;
+        }
+      });
+  }
+
+  function handleSubmit(e) {
+    e.preventDefault();
+    const post = {
+      name: name,
+      text: message,
+    };
+    postMessage(post);
+    setName("");
+    setMessage("");
+  }
+
   return (
     <div className={classes.container}>
       <h1>Get in touch</h1>
@@ -19,17 +56,31 @@ function Contact() {
         <a className={classes.link}>dylantravisdev@gmail.com</a> and let's talk!
       </p>
 
-      <form className={classes.form}>
+      <form
+        id="contact-form"
+        className={classes.form}
+        onSubmit={(e) => handleSubmit(e)}
+      >
         <div className={classes.inputContainer}>
           <BsFillPersonFill className={classes.icon} />
-          <input placeholder="Fill out your name" />
+          <input
+            value={name}
+            onChange={(e) => setName(e.target.value)}
+            placeholder="Fill out your name"
+          />
         </div>
         <div className={classes.inputContainer}>
           <BsFillEnvelopeFill className={classes.icon} />
-          <input placeholder="Write a message" />
+          <input
+            value={message}
+            onChange={(e) => setMessage(e.target.value)}
+            placeholder="Write a message"
+          />
         </div>
         <div className={classes.btnContainer}>
-          <Button color="green">SUBMIT YOUR MESSAGE </Button>
+          <Button form="contact-form" color="green">
+            SUBMIT YOUR MESSAGE{" "}
+          </Button>
         </div>
       </form>
 
@@ -51,7 +102,10 @@ function Contact() {
           {" "}
           <BsTwitter /> Twitter{" "}
         </Button>
-        <Button color="red" outsideLink="https://dtravmysite.s3.us-west-1.amazonaws.com/Dylan_Travis_-_Web_Developer.pdf">
+        <Button
+          color="red"
+          outsideLink="https://dtravmysite.s3.us-west-1.amazonaws.com/Dylan_Travis_-_Web_Developer.pdf"
+        >
           {" "}
           <BsFillFilePdfFill /> Resume{" "}
         </Button>

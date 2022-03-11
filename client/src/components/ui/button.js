@@ -2,7 +2,7 @@ import classes from "./button.module.css";
 import { Link } from "react-router-dom";
 
 function Button(props) {
-  const { color, link, outsideLink } = props;
+  const { color, link, outsideLink, form } = props;
 
   let style = "#2f2f2f";
   if (color === "red") {
@@ -45,9 +45,9 @@ function Button(props) {
     );
   }
   return (
-    <a className={classes.container} style={{ backgroundColor: style }}>
+    <button form={form} type="submit" className={classes.container} style={{ backgroundColor: style }}>
       {props.children}
-    </a>
+    </button>
   );
 }
 

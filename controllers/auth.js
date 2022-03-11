@@ -1,7 +1,6 @@
 const Project = require("../models/Projects");
 const Message = require("../models/Messages");
 
-// get and return all projects
 exports.getProjects = (req, res) => {
   Project.find().then((proj) => {
     if (!proj) {
