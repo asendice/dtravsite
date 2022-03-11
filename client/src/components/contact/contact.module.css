@@ -8,6 +8,11 @@
   font-size: 2.6rem;
   margin: 0px;
 }
+.container h2 {
+  color: #8A8A8A;
+  font-size: 1.8rem;
+  margin: 0px;
+}
 
 .container p {
   color: #8A8A8A; 
@@ -58,6 +63,10 @@
 }
 
 .btnContainer {
-  margin-top: 1rem;
   width: 15rem;
+}
+
+.socials {
+  display: flex;
+  gap: 1rem;
 }

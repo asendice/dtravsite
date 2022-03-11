@@ -1,5 +1,11 @@
 import classes from "./contact.module.css";
-import { BsFillPersonFill, BsFillEnvelopeFill } from "react-icons/bs";
+import {
+  BsFillPersonFill,
+  BsFillEnvelopeFill,
+  BsLinkedin,
+  BsGithub,
+  BsTwitter,
+} from "react-icons/bs";
 import Button from "../ui/button";
 
 function Contact() {
@@ -22,9 +28,29 @@ function Contact() {
           <input placeholder="Write a message" />
         </div>
         <div className={classes.btnContainer}>
-          <Button title="SUBMIT YOUR MESSAGE" color='green' />
+          <Button color="green">SUBMIT YOUR MESSAGE </Button>
         </div>
       </form>
+
+      <h2>Let's get social</h2>
+      <p>Check out my profiles on Linkedin, GitHub, and Twitter</p>
+      <div className={classes.socials}>
+        <Button
+          color="linkedin"
+          outsideLink="https://www.linkedin.com/in/dylan-travis-2716a4205/"
+        >
+          {" "}
+          <BsLinkedin /> Linkedin{" "}
+        </Button>
+        <Button color="github" outsideLink="https://github.com/asendice">
+          {" "}
+          <BsGithub /> GitHub{" "}
+        </Button>
+        <Button color="twitter" outsideLink="https://twitter.com/KBdylan">
+          {" "}
+          <BsTwitter /> Twitter{" "}
+        </Button>
+      </div>
     </div>
   );
 }
