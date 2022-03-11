@@ -1,0 +1,28 @@
+.container {
+  width: 60%;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  margin: .5rem auto;
+  padding: 3rem;
+  margin-bottom: 2rem;
+}
+
+.container h1 {
+  margin: 0px;
+  color: #CACACA;
+}
+
+.container p {
+  margin: .8rem;
+  line-height: 0rem;
+  font-size: 1rem;
+  color: #8A8A8A;
+}
+
+.link {
+  text-decoration: none;
+  color: #CACACA;
+  font-weight: bold;
+  cursor: pointer;
+}

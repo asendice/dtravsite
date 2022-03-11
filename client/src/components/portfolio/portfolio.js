@@ -1,6 +1,7 @@
 import { useState, useEffect } from "react";
 import FilterList from "./filter-list";
 import ProjectsList from "./projects-list";
+import Footer from "../footer/footer";
 import classes from "./portfolio.module.css";
 import backendApi from "../../apis/backendApi";
 
@@ -35,6 +36,7 @@ function Portfolio() {
       </div>
       <FilterList setFilter={setFilter} filter={filter} />
       <ProjectsList filter={filter} projects={projects} />
+      <Footer />
     </div>
   );
 }

@@ -62,7 +62,7 @@
 }
 .container:hover .overlay {
   opacity: 1;
-  animation: slideDown 0.2s;
+  animation: slideDown 0.4s;
 }
 
 @keyframes slideDown {
