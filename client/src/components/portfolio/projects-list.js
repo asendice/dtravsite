@@ -14,6 +14,7 @@ function ProjectList(props) {
       ) : (
         <p>Showing {projects.length} projects filtered by {filter} </p>
       )}
+      <p>Click on any project to view more information.</p>
       <ul className={classes.list}>
         {projects.sort((a, b) => a.order - b.order).map((prj) => (
           <li key={prj.name}><Project project={prj}/></li>
