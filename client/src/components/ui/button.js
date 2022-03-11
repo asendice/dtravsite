@@ -8,6 +8,9 @@ function Button(props) {
   if(color === "red"){
     style = `rgb(203, 0, 0)`
   }
+  if(color === "green"){
+    style = `#00796B`
+  }
   if (link){
     return <Link to={link} className={classes.container} style={{backgroundColor: style}}>{title}</Link>
   }

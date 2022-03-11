@@ -22,7 +22,7 @@ function Contact() {
           <input placeholder="Write a message" />
         </div>
         <div className={classes.btnContainer}>
-          <Button title="SUBMIT YOUR MESSAGE" />
+          <Button title="SUBMIT YOUR MESSAGE" color='green' />
         </div>
       </form>
     </div>
