@@ -1,0 +1,21 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+}
+
+.textContainer {
+  width: 60%;
+  margin: 4rem auto 0rem auto;
+}
+
+.textContainer h1 {
+  color: #CACACA;
+  font-size: 2.6rem;
+}
+
+.textContainer p {
+  color: #8A8A8A; 
+  font-size: 1.3rem;
+  line-height: .7em;
+}

@@ -42,7 +42,7 @@ function App() {
         <Route path="/portfolio" element={<Porfolio projects={projects} />} />
         <Route path="/technologies" element={<Tech />} />
         <Route path="/contact" element={<Contact />} />
-        <Route path="/portfolio/:name" element={<Project />} />
+        <Route path="/portfolio/:name" element={<Project projects={projects} />} />
       </Routes>
     </div>
   );
