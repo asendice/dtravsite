@@ -36,3 +36,19 @@ exports.postMessage = (req, res) => {
       });
     });
 };
+
+exports.getProjectByName = (req, res) => {
+  const { name } = req.params;
+  Project.find({name: name}).then((proj) => {
+    if (!proj) {
+      return res.status(404).json({
+        errors: [{ user: `Project ${name} cannot be found` }],
+      });
+    } else {
+      return res.status(200).json({
+        success: true,
+        message: proj,
+      });
+    }
+  });
+};
