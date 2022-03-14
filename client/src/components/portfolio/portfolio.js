@@ -1,32 +1,13 @@
-import { useState, useEffect } from "react";
+import { useState } from "react";
 import FilterList from "./filter-list";
 import ProjectsList from "./projects-list";
 import Footer from "../footer/footer";
 import classes from "./portfolio.module.css";
-import backendApi from "../../apis/backendApi";
 
-function Portfolio() {
+function Portfolio(props) {
   const [filter, setFilter] = useState("Show All");
-  const [projects, setProjects] = useState([]);
 
-  async function getProjects() {
-    await backendApi
-      .get("/projects")
-      .then((response) => {
-        if (response) {
-          return response;
-        } else {
-          const error = new Error(`Error ${error.status}: ${error.statusText}`);
-          error.response = response;
-          throw error;
-        }
-      })
-      .then((response) => setProjects(response.data.message));
-  }
-
-  useEffect(() => {
-    getProjects();
-  },[])
+  const { projects } = props;
 
   return (
     <div className={classes.container}>
