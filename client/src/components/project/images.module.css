@@ -41,13 +41,13 @@
   border: none;
   border-radius: 3rem;
   background-color: var(--grey);
-  opacity: 0.6;
-  color: #333;
+  opacity: 0.8;
+  color: #00796B;
   font-size: 3rem;
   cursor: pointer;
   z-index: 6;
   position: absolute;
-  top: 8rem;
+  top: 15rem;
 }
 
 .right {

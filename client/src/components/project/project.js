@@ -1,5 +1,5 @@
 import classes from "./project.module.css";
-import { useParams } from "react-router-dom";
+import { useParams, useLocation } from "react-router-dom";
 import { useState, useEffect } from "react";
 import backendApi from "../../apis/backendApi";
 import Buttons from "./buttons";
@@ -8,6 +8,13 @@ import Footer from "../footer/footer";
 function Project() {
   const [project, setProject] = useState({});
   const { name } = useParams();
+
+  const { pathname } = useLocation();
+
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, [pathname]);
+
 
   async function getProjectByName() {
     await backendApi

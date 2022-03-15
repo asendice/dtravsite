@@ -47,7 +47,8 @@
 }
 
 .images {
-  height: 30rem;
-  width: 80%;
+  height: 35rem;
+  width: 100%;
   margin: 0rem auto 0rem auto;
+  position: relative;
 }
