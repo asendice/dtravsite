@@ -3,12 +3,11 @@ import { useParams } from "react-router-dom";
 import { useState, useEffect } from "react";
 import backendApi from "../../apis/backendApi";
 import Buttons from "./buttons";
+import Images from "./images";
 import Footer from "../footer/footer";
 function Project() {
   const [project, setProject] = useState({});
   const { name } = useParams();
-
-  console.log(project, "project");
 
   async function getProjectByName() {
     await backendApi
@@ -38,6 +37,10 @@ function Project() {
         </div>
 
         <Buttons project={project} />
+        
+        <div className={classes.images}>
+          <Images images={project.images} />
+        </div>
 
         <div className={classes.paragraph}>
           <h1>About this project</h1>
