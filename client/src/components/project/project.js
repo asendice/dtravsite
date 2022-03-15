@@ -57,7 +57,7 @@ function Project() {
           <p className={classes.btnText}>Visit the github</p>
         </Button>
         <div className={classes.socials}>
-          <Button color="linkedin">
+          <Button color="linkedin" outsideLink="https://www.linkedin.com/in/dylan-travis-2716a4205/">
             <BsLinkedin className={classes.icon} />{" "}
           </Button>
           <Button color="github" outsideLink="https://github.com/asendice">
