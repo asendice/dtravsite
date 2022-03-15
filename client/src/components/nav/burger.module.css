@@ -30,7 +30,7 @@
   left: 90%;
   transform: all .4s;
   cursor: pointer;
-  z-index: 2;
+  z-index: 5;
   height: 3rem;
   width: 3rem;
 }
