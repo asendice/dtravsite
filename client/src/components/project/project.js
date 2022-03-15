@@ -3,11 +3,12 @@ import { useParams } from "react-router-dom";
 import { useState, useEffect } from "react";
 import backendApi from "../../apis/backendApi";
 import Buttons from "./buttons";
+import Footer from "../footer/footer";
 function Project() {
   const [project, setProject] = useState({});
   const { name } = useParams();
 
-  console.log(project);
+  console.log(project, "project");
 
   async function getProjectByName() {
     await backendApi
@@ -28,17 +29,40 @@ function Project() {
     getProjectByName();
   }, []);
 
-  return (
-    <div className={classes.container}>
-      <div className={classes.textContainer}>
-        <h1>{project.name}</h1>
-        <p>{project.excerpt}</p>
-      </div>
+  if (project) {
+    return (
+      <div className={classes.container}>
+        <div className={classes.textContainer}>
+          <h1>{project.name}</h1>
+          <p>{project.excerpt}</p>
+        </div>
 
-      <Buttons project={project}/>
-      
-    </div>
-  );
+        <Buttons project={project} />
+
+        <div className={classes.paragraph}>
+          <h1>About this project</h1>
+          <div className={classes.line}></div>
+          <p>{project.description}</p>
+        </div>
+        <div className={classes.paragraph}>
+          <h1>Technologies</h1>
+          <p>Technologies that were involved in the creation of this project</p>
+          <div className={classes.line}></div>
+          {project.skills && (
+            <ul className={classes.list}>
+              {project.skills.map((skill) => (
+                <li key={skill}>
+                  <p>{skill}</p>
+                </li>
+              ))}
+            </ul>
+          )}
+        </div>
+        <Footer />
+      </div>
+    );
+  }
+  return <div>No Projets Available</div>;
 }
 
 export default Project;
