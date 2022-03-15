@@ -2,9 +2,6 @@
   display: flex;
   flex-direction: column;
   height: 100vh;
-}
-
-.textContainer {
   width: 60%;
   margin: 4rem auto 0rem auto;
 }
@@ -18,4 +15,28 @@
   color: #8A8A8A; 
   font-size: 1.3rem;
   line-height: .7em;
+}
+
+.btnContainer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 1rem;
+}
+
+.socials {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.icon {
+  font-size: 1.4rem;
+}
+
+.btnText {
+  margin: 0px;
+  margin-left: .5rem;
+  font-weight: bold;
+  font-size: 1rem;
 }
