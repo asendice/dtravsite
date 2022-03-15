@@ -1,4 +1,4 @@
-import { BsLinkedin, BsGithub, BsTwitter } from "react-icons/bs";
+import { BsLinkedin, BsGithub, BsTwitter, BsFillFilePdfFill } from "react-icons/bs";
 import classes from "./socials.module.css";
 
 function Socials() {
@@ -28,6 +28,14 @@ function Socials() {
         className={`${classes.iconContainer} ${classes.twitter}`}
       >
         <BsTwitter className={classes.twitter} />
+      </a>
+      <a
+        href="https://dtravmysite.s3.us-west-1.amazonaws.com/Dylan_Travis_-_Web_Developer.pdf"
+        rel="noopener noreferrer"
+        target="_blank"
+        className={`${classes.iconContainer} ${classes.red}`}
+      >
+        <BsFillFilePdfFill className={classes.red}  />
       </a>
     </div>
   );

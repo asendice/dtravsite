@@ -39,6 +39,11 @@
   color: #8A8A8A;
 }
 
+.red {
+  background-color: rgb(203, 0, 0);
+  color: #fff;
+}
+
 .iconContainer:hover {
   animation: slideOut .4s forwards;
 }
