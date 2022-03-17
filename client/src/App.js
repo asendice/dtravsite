@@ -1,5 +1,6 @@
 import { Routes, Route, useParams, useLocation } from "react-router-dom";
 import './App.css';
+import Squares from "./components/nav/squares";
 import Burger from "./components/nav/burger";
 import About from "./components/about/about";
 import Porfolio from "./components/portfolio/portfolio";
@@ -38,6 +39,7 @@ function App() {
 
   return (
     <div className="App">
+      <Squares />
       <Burger setOpen={setOpen} open={open} />
       {open ? <Nav setOpen={setOpen} /> : ""}
       <Routes>

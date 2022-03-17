@@ -1,0 +1,48 @@
+.bigSquare {
+  position: absolute;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  align-items: center;
+  justify-content: center;
+  height: 2.4rem;
+  width: 2.4rem;
+  gap: .3rem;
+  top: 3rem;
+  left: 10%;
+  transform: all .4s;
+  cursor: pointer;
+  z-index: 2;
+}
+
+.square {
+  height: 100%;
+  width: 100%;
+  background-color: #8a8a8a;
+  transition: all .4s;
+}
+
+.bigSquare:hover .one {
+  transform: translateX(-.2rem) translateY(-.2rem);
+}
+.bigSquare:hover .two {
+  transform: translateY(-.2rem);
+}
+.bigSquare:hover .three {
+  transform: translateX(.2rem) translateY(-.2rem);
+}
+.bigSquare:hover .four {
+  transform: translateX(-.2rem);
+}
+.bigSquare:hover .six {
+  transform: translateX(.2rem);
+}
+.bigSquare:hover .seven {
+  transform: translateX(-.2rem) translateY(.2rem);
+}
+.bigSquare:hover .eight {
+  transform: translateY(.2rem);
+}
+.bigSquare:hover .nine {
+  transform: translateX(.2rem) translateY(.2rem);
+}
