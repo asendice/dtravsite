@@ -84,10 +84,10 @@ function Tech() {
         <p>Technologies that I am actively using and building projects with</p>
       </div>
 
-      <div className={classes.iconContainer}>
+      <div className={classes.techContainer}>
         {TECHNOLOGIES.map((item, index) => {
           return (
-            <div key={index} className={classes.techContainer}>
+            <div key={index} className={classes.iconContainer}>
               {item.icon}
               <p>{item.name}</p>
             </div>
