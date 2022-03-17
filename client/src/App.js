@@ -39,7 +39,7 @@ function App() {
 
   return (
     <div className="App">
-      <Squares />
+      {pathname.includes("/portfolio/") && <Squares />}
       <Burger setOpen={setOpen} open={open} />
       {open ? <Nav setOpen={setOpen} /> : ""}
       <Routes>

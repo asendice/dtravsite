@@ -5,8 +5,8 @@
   grid-template-rows: repeat(3, 1fr);
   align-items: center;
   justify-content: center;
-  height: 2.4rem;
-  width: 2.4rem;
+  height: 2.2rem;
+  width: 2.2rem;
   gap: .3rem;
   top: 3rem;
   left: 10%;
