@@ -11,6 +11,7 @@
 }
 
 .textContainer h1 {
+  position: relative;
   color: #cacaca;
   font-size: 2.6rem;
 }
@@ -18,8 +19,9 @@
 .textContainer p {
   color: #8a8a8a;
   font-size: 1.3rem;
-  line-height: 0.7em;
+  line-height: 1.7em;
 }
+
 
 .btnContainer {
   margin-top: 1rem;
@@ -32,3 +34,42 @@
   font-weight: bold;
   cursor: pointer;
 }
+
+/* 
+.textContainer h1::before,
+.textContainer h1::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+}
+
+.textContainer h1::before {
+  content: "";
+  background-color: #2f2f2f;
+  animation: type 3s steps(15, end) 1s forwards;
+}
+
+.textContainer h1::after{
+  content: "";
+  background-color: black;
+  width: 2px;
+  animation: type 2.7s steps(20, end) 1s forwards, pulse .8s infinite;
+}
+
+@keyframes type {
+  to {
+    left: 100%
+  }
+}
+
+@keyframes pulse {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+} */
