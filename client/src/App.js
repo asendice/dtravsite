@@ -1,4 +1,4 @@
-import { Routes, Route } from "react-router-dom";
+import { Routes, Route, useParams, useLocation } from "react-router-dom";
 import './App.css';
 import Burger from "./components/nav/burger";
 import About from "./components/about/about";
@@ -13,6 +13,9 @@ import { useState, useEffect } from "react";
 function App() {
   const [ open, setOpen ] = useState(false);
   const [projects, setProjects] = useState([]);
+
+  const { pathname } = useLocation();
+  console.log(pathname)
 
   async function getProjects() {
     await backendApi

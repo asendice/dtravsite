@@ -6,8 +6,6 @@ function Images(props) {
   const [imgIndex, setImgIndex] = useState(0);
   const { images } = props;
 
-  console.log(images, "images")
-
   function onRightArrowClick() {
     if (imgIndex < images.length - 1) {
       setImgIndex((prevState) => prevState + 1);
