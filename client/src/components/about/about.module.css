@@ -1,7 +1,6 @@
 .container {
   display: flex;
   flex-direction: column;
-  height: 100vh;
   position: relative;
 }
 
@@ -33,6 +32,16 @@
   color: #cacaca;
   font-weight: bold;
   cursor: pointer;
+}
+
+@media only screen and (max-width: 1000px){
+  .textContainer {
+    margin-top: 8rem;
+    width: 90%;
+  }
+  .textContainer p {
+    font-size: 1rem;
+  }
 }
 
 /* 
