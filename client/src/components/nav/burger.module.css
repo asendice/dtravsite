@@ -2,6 +2,8 @@
   position: fixed;
   display: flex;
   flex-direction: column;
+  justify-content: center;
+  align-items: center;
   gap: .5rem;
   top: 3rem;
   left: 90%;
@@ -53,6 +55,11 @@
 @media only screen and (max-width: 1000px){
   .container {
     left: 85%;
+    top: 90%;
+    border-radius: 100%;
+    background-color: rgba(0, 0, 0, 0.9);
+    height: 3.5rem;
+    width: 3.5rem;
   }
   .closeContainer{
     left: 85%;

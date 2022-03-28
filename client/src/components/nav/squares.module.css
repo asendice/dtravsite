@@ -46,3 +46,12 @@
 .bigSquare:hover .nine {
   transform: translateX(.2rem) translateY(.2rem);
 }
+
+@media only screen and (max-width: 1000px){
+  .bigSquare {
+    top: 90%;
+  }
+  .square {
+    background-color: rgba(0, 0, 0, 0.9)
+  }
+}
