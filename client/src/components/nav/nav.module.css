@@ -54,5 +54,5 @@
 
 .active {
   text-decoration: underline;
-  color: pink;
+  background-color: #1f1f1f;
 }
