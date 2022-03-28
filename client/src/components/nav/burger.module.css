@@ -1,5 +1,5 @@
 .container {
-  position: absolute;
+  position: fixed;
   display: flex;
   flex-direction: column;
   gap: .5rem;
@@ -25,7 +25,7 @@
 }
 
 .closeContainer {
-  position: absolute;
+  position: fixed;
   top: 3rem;
   left: 90%;
   transform: all .4s;
