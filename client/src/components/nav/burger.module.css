@@ -49,3 +49,12 @@
 .right {
   transform: rotate(-45deg) translateY(-.2rem);
 }
+
+@media only screen and (max-width: 1000px){
+  .container {
+    left: 85%;
+  }
+  .closeContainer{
+    left: 85%;
+  }
+}
