@@ -1,7 +1,7 @@
 .container {
   display: flex;
   flex-direction: column;
-  margin: 4rem auto 0rem auto;
+  margin: 0rem auto 0rem auto;
 }
 
 .textContainer h1 {
