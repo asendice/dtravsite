@@ -22,7 +22,7 @@ function About() {
           </Link>
           .
           <br />
-          The technologies that I have used and or actively using can be view on
+          The technologies that I have used and or actively using can be viewed on
           the{" "}
           <Link className={classes.link} to="/technologies">
             tech stack page
