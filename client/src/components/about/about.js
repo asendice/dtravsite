@@ -22,18 +22,23 @@ function About() {
           </Link>
           .
           <br />
-          The technologies that I have used and or actively using can be viewed on
-          the{" "}
+          The technologies that I have used and or actively using can be viewed
+          on the{" "}
           <Link className={classes.link} to="/technologies">
             tech stack page
           </Link>
           .
         </p>
       </div>
+      <div className={classes.certificates}>
+        <Button>Nucamp Bootstrap Certificate</Button>
+        <Button>Nucamp Front-End Web Development: React</Button>
+        <Button>Nucamp Front-End Web and Mobile Development Bootcamp</Button>
+      </div>
       <div className={classes.btnContainer}>
         <Button color="red" link="/portfolio">
           {" "}
-          WEB PORTFOLIO PAGE
+          Web Portfolio Page &#8594;
         </Button>
       </div>
     </div>
