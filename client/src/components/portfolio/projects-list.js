@@ -6,9 +6,9 @@ function ProjectList(props) {
 
   return (
     <div className={classes.container}>
-      {filter === "Show All" ? (
+      {filter === "" ? (
         <p>
-          Showing all projects. Use the filter to list them by skill or
+          Showing all projects. Select a filter to list projects by skill or
           technology.
         </p>
       ) : (
