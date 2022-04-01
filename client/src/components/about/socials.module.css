@@ -76,8 +76,13 @@
 
 @media only screen and (max-width: 1000px){
   .container {
-    top: 45rem;
+    top: 2rem;
     display: flex;
     flex-direction: row;
+  }
+  .iconContainer {
+    height: 3rem;
+    width: 3rem;
+    font-size: 2rem;
   }
 }
