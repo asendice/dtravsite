@@ -1,6 +1,7 @@
+import classes from "./about.module.css";
 import Button from "../ui/button";
 import Socials from "./socials";
-import classes from "./about.module.css";
+import Certificate from "../ui/certificate";
 import { Link } from "react-router-dom";
 
 function About() {
@@ -31,9 +32,15 @@ function About() {
         </p>
       </div>
       <div className={classes.certificates}>
-        <Button>Nucamp Bootstrap Certificate</Button>
-        <Button>Nucamp Front-End Web Development: React</Button>
-        <Button>Nucamp Front-End Web and Mobile Development Bootcamp</Button>
+        <Certificate link="https://dtravmysite.s3.us-west-1.amazonaws.com/certificates/Bootstrap_Certificate_Dylan.pdf">
+          Front-End Web Development: Bootstrap
+        </Certificate>
+        <Certificate link="https://dtravmysite.s3.us-west-1.amazonaws.com/certificates/React_Certificate_Dylan.pdf">
+          Front-End Web Development: React
+        </Certificate>
+        <Certificate link="https://dtravmysite.s3.us-west-1.amazonaws.com/certificates/Front_End_Certificate_Dylan.pdf">
+          Front-End Web and Mobile Development Bootcamp
+        </Certificate>
       </div>
       <div className={classes.btnContainer}>
         <Button color="red" link="/portfolio">

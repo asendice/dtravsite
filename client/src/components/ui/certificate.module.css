@@ -1,0 +1,27 @@
+.container {
+  background-color: #1f1f1f;
+  padding: 1rem;
+  border-radius: .5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  color: #cacaca;
+  font-size: .9rem;
+  height: 8rem;
+  width: 18rem;
+  text-decoration: none;
+  box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+}
+
+.nucamp {
+  font-size: 1.2rem;
+  background-clip: text;
+  background: -webkit-gradient(linear, left top, right top, from(#2ea7bd), color-stop(50%, rgba(245, 35, 74, 0.81)));
+  background: linear-gradient(to right, #2ea7bd 0%, rgba(245, 35, 74, 0.81) 50%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.container p {
+  margin: 0px;
+}
