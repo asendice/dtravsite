@@ -14,7 +14,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  background-color: #0077b5;
+  background-color: #0076b5;
   transform: rotate(45deg);
   top: 40%;
   left: -20%;
@@ -25,6 +25,13 @@
   cursor: pointer;
   animation: 1.2s bannerSlide both;
   animation-delay: .5s;
+  text-decoration: none;
+  transition: all .3s ease-in-out;
+}
+
+.banner:hover {
+  background-color: #005888;
+  text-decoration: underline;
 }
 
 @keyframes bannerSlide {
