@@ -10,7 +10,7 @@ function Certificate(props) {
       target="_blank"
       className={classes.container}
     >
-      <p className={classes.nucamp}>nucamp</p>
+      <p className={classes.nucamp}>nucamp certificate</p>
       {props.children}
       <p style={{ marginLeft: "80%" }}>2020</p>
     </a>

@@ -23,4 +23,39 @@
   color: #fff;
   box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
   cursor: pointer;
+  animation: 1.2s bannerSlide both;
+  animation-delay: .5s;
+}
+
+@keyframes bannerSlide {
+  0% {
+    transform: rotate(45deg) translateX(-10rem) translateY(-15rem);
+  }
+
+  100% {
+    transform: rotate(45deg) translateX(0%) translateY(0%);
+  }
+}
+
+@media only screen and (max-width: 1000px){
+  .container {
+    width: 200px;
+    height: 200px;
+  }
+
+  .banner {
+    width: 20rem;
+  }
+}
+@media only screen and (max-width: 700px){
+  .container {
+    width: 150px;
+    height: 150px;
+  }
+
+  .banner {
+    width: 16rem;
+    font-size: .7rem;
+    top: 35%;
+  }
 }
