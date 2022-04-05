@@ -24,6 +24,7 @@
   align-items: center;
   justify-content: center;
   gap: .5rem;
+  padding: 0px;
 }
 
 .listItem {
@@ -33,7 +34,7 @@
   color: #CACACA;
   font-size: 2rem;
   height: 10rem;
-  width: 90%;
+  width: 100%;
   transition: all .4s;
   cursor: pointer;
   text-decoration: none;
