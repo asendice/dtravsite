@@ -1,5 +1,5 @@
 import classes from "./contact.module.css";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import {
   BsFillPersonFill,
   BsFillEnvelopeFill,
@@ -10,10 +10,13 @@ import {
 } from "react-icons/bs";
 import Button from "../ui/button";
 import backendApi from "../../apis/backendApi";
+import { useNotification } from "../../store/notification-context";
 
 function Contact() {
   const [name, setName] = useState("");
   const [message, setMessage] = useState("");
+  const [status, setStatus] = useState("");
+  const notification = useNotification();
 
   async function postMessage(post) {
     const json = JSON.stringify(post);
@@ -25,7 +28,7 @@ function Contact() {
       })
       .then((response) => {
         if (response) {
-          return response;
+          setStatus(response.status === 200 ? "success" : "failed");
         } else {
           const error = new Error(
             `Error ${response.status}: ${response.statusText}`
@@ -35,6 +38,17 @@ function Contact() {
         }
       });
   }
+
+  useEffect(() => {
+    console.log(status)
+    if (status) {
+      notification.showNotification({
+        message: status === 'success' ? "Message sent!" : "Message failed",
+        status: status === 'success' ? "success" : "failed",
+      });
+    }
+    setStatus("")
+  }, [status]);
 
   function handleSubmit(e) {
     e.preventDefault();

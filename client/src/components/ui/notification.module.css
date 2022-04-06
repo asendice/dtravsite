@@ -1,0 +1,37 @@
+.container {
+  display: flex;
+  align-items: center;
+  height: 3rem;
+  width: 20rem;
+  text-align: center;
+  background-color: black;
+  color: #fff;
+  font-size: 1.2rem;
+  position: fixed;
+  bottom: 0;
+  animation: slideUp 0.4s;
+}
+
+.status {
+  width: 20%;
+  height: 100%;
+  justify-self: flex-start;
+}
+
+.success {
+  background-color: #00796B;
+}
+
+.failed {
+  background-color: rgb(203, 0, 0);
+}
+
+
+@keyframes slideUp {
+  0% {
+    transform: translateY(200%);
+  }
+  100% {
+    transform: translateY(0%);
+  }
+}
