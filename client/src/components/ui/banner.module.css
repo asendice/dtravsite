@@ -10,13 +10,13 @@
 .banner {
   position: absolute;
   height: 2.4rem;
-  width: 28rem;
+  width: 160%;
   display: flex;
   align-items: center;
   justify-content: center;
   background-color: #0076b5;
   transform: rotate(45deg);
-  top: 40%;
+  top: 35%;
   left: -20%;
   font-size: .9rem;
   font-weight: bold;
@@ -26,12 +26,11 @@
   animation: 1.2s bannerSlide both;
   animation-delay: .5s;
   text-decoration: none;
-  transition: all .3s ease-in-out;
+  transition: all .3s ease-in;
 }
 
 .banner:hover {
   background-color: #005888;
-  text-decoration: underline;
 }
 
 @keyframes bannerSlide {
@@ -49,10 +48,6 @@
     width: 200px;
     height: 200px;
   }
-
-  .banner {
-    width: 20rem;
-  }
 }
 @media only screen and (max-width: 700px){
   .container {
@@ -61,8 +56,6 @@
   }
 
   .banner {
-    width: 16rem;
     font-size: .7rem;
-    top: 35%;
   }
 }
