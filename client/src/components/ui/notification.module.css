@@ -1,15 +1,27 @@
 .container {
+  position: fixed;
+  bottom: 0;
   display: flex;
   align-items: center;
-  height: 3rem;
-  width: 20rem;
+  justify-content: center; 
+  width: 60rem;
+}
+
+.notification {
+  display: flex;
+  align-items: center;
+  height: 4rem;
+  width: 25rem;
   text-align: center;
   background-color: black;
   color: #fff;
   font-size: 1.2rem;
-  position: fixed;
-  bottom: 0;
   animation: slideUp 0.4s;
+  align-self: center;
+}
+
+.notification h4 {
+  margin-left: 4rem;
 }
 
 .status {
@@ -33,5 +45,26 @@
   }
   100% {
     transform: translateY(0%);
+  }
+}
+
+@media only screen and (max-width: 1000px){
+  .container {
+    width: 50rem;
+  }
+}
+@media only screen and (max-width: 850px){
+  .container {
+    width: 40rem;
+  }
+}
+@media only screen and (max-width: 700px){
+  .container {
+    width: 30rem;
+  }
+}
+@media only screen and (max-width: 500px){
+  .container {
+    width: 90%;
   }
 }

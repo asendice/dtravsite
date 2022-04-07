@@ -13,9 +13,6 @@ function Layout(props) {
   const notification = notificationContext.notification;
   const onAboutPage = pathname === "/";
 
-  console.log(notification, "???")
-
-
   return (
     <div className={`${onAboutPage ? "" : classes.layout}`}>
       <Banner title="LATEST LIVE APP" />
