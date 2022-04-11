@@ -15,7 +15,7 @@ function About() {
         <p>
           I am a full-stack web developer specializing in React and
           React-Native.
-          <br />I am currently seeking a remote Front-End || Full-Stack web
+          <br />I am currently seeking a remote Front-End or Full-Stack web
           developer position. <br />
           Feel free to take a look at my latest projects on the{" "}
           <Link className={classes.link} to="/portfolio">
