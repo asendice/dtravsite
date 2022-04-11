@@ -36,7 +36,7 @@ if (process.env.NODE_ENV === "production") {
   });
 }
 
-const whitelist = ["http://localhost:3000", "https://dylantravis.herokuapp.com/api"];
+const whitelist = ["http://localhost:3000", "https://dtravsite.herokuapp.com/api"];
 
 const corsOptions = {
   origin: function (origin, callback) {
