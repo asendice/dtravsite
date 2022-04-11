@@ -4,12 +4,12 @@
   width: 300px;
   top: 0;
   right: 0;
-  z-index: 1002;
 }
 
 .banner {
   position: absolute;
   height: 2.4rem;
+  z-index: 1002;
   width: 160%;
   display: flex;
   align-items: center;
