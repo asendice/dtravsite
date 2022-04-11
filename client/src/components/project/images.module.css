@@ -5,7 +5,7 @@
   display: flex;
   justify-content: space-between;
   margin: 2rem auto 0rem auto;
-  z-index: 1;
+  z-index: 159;
 }
 .imagecontainer {
   height: 20rem;
@@ -43,7 +43,7 @@
   color: #333;
   font-size: 3rem;
   cursor: pointer;
-  z-index: 6;
+  z-index: 160;
   margin-top: 25%;
   background-color: #8a8a8a
 }
